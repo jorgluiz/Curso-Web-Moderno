@@ -1,0 +1,12 @@
+function acharPares(){
+    for (let i = 0; i <= 100; i++) {
+        if (i % 2 === 0) {
+            console.log('Todos os pares é:', i)
+        }
+    
+    }
+    
+}
+
+acharPares()
+
