@@ -1,0 +1,10 @@
+Na Variavel (let) pode-se mudar os valores
+----------------------------------------------
+Na variavel (const) não pode mudar os valores
+----------------------------------------------
+(var) tem escopo global e scopo de função 
+----------------------------------------------
+Variaveis definidas com palavra reservada (let) 
+scopo global
+scopo função
+scopo bloco

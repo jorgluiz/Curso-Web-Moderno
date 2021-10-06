@@ -1,0 +1,16 @@
+V E V -> V   TRUE
+V E F -> F   FALSE 
+F E F -> F   FALSE
+
+V OU V -> V  TRUE
+F OU V -> V  TRUE
+F OU F -> F  FALSE
+
+V XOR V -> F FALSE
+V XOR F -> V TRUE
+F XOR V -> V TRUE
+F XOR F -> F FALSE
+
+//Negação !
+!V -> F  FALSE
+!F -> V  TRUE
