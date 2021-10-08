@@ -31,7 +31,16 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
+        console.log(document.forms) //retorna HTMLCollection(1)
+        console.log(document.forms[0])
+        console.log(document.getElementsByName('pesquisa'))//retorna um no -> NodeList [form]
+        console.log(document.getElementsByName('form'))//retorna HTMLCollection
+
+        console.log(document.pesquisa)
+        console.log(document.pesquisa.q)
+        document.pesquisa.q.value = 'Linux' //altetando o texto do form (Digite o termo...)
+        document.pesquisa.hl.value = 'en-us'
+        console.log(document.pesquisa.hl.selected Index) //selecionando índice
     </script>
 </body>
 
