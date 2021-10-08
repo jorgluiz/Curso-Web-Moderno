@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html> <!-- pai de todos -->
 <head>
     <meta charset="UTF-8">
     <title>Selecionar Elementos #02</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body class="conteudo exercicio">
-    <div id="primeiro">#primeiro</div>
+    <div id="primeiro">#primeiro</div> <!-- primeiro filho do body-->
     <div>Segundo</div>
     <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
     <script>              
-        // ...
+        document.querySelector('#primeiro').classList.add('destaque')
+
+        //*** obs: querySelectorAll contém o .forEach. Assim não precisa transformar o NodeList para Array ***
+
+        const selecionar = seletor => 
+            document.querySelectorAll(seletor).forEach(e => e.classList.add('destaque'))
+        const deselecionar = seletor =>
+        document.querySelectorAll(seletor).forEach(e => e.classList.remove('destaque'))
+        
+        //param
+        selecionar('div')
+
+        deselecionar('*') // seletor universal ( * )
+        selecionar('.terceiro.ultimo')
+
+        deselecionar('*')
+        selecionar(':not(#primeiro')
+
+        deselecionar('*')
+        selecionar(':nth-child(1')
+
+        deselecionar('*')
+        selecionar('div:nth-of-type(1)')
+
+        deselecionar('*')
+        selecionar('[wb-attrib]')
     </script>
 </body>
 </html>
