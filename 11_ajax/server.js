@@ -34,6 +34,7 @@ app.post('/upload', (req, res) => { //requisição tipo post
 })
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// fetch2
 app.post('/formulario', (req, res) => { //tratar requisição do type post
     res.send({
         ...req.body,   //devolvendo resposta para o FrontEnd
@@ -41,6 +42,20 @@ app.post('/formulario', (req, res) => { //tratar requisição do type post
     })
 })
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// axios2
+app.get('/parOuImpar', (req, res) => {
+    // req.body
+    // req.query
+    // req.params
+    const par = parseInt(req.query.numero) % 2 === 0
+    res.send({
+        resultado: par ? 'par' : 'impar'
+    })
+})
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //app.get('/teste', (req, res) => res.send(new Date))  //vai servi p/página (data atual)
 app.listen(8080, () => console.log('Executando...'))
