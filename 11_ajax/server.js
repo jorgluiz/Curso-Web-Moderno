@@ -34,5 +34,13 @@ app.post('/upload', (req, res) => { //requisição tipo post
 })
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+app.post('/formulario', (req, res) => { //tratar requisição do type post
+    res.send({
+        ...req.body,   //devolvendo resposta para o FrontEnd
+        id: 1
+    })
+})
+
+
 //app.get('/teste', (req, res) => res.send(new Date))  //vai servi p/página (data atual)
 app.listen(8080, () => console.log('Executando...'))
