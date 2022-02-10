@@ -1,6 +1,8 @@
-# Professor Leonardo Moura leitão
-# Curso Web Moderno Completo com JavaScript 2020 + Projetos
-# Duração +D70 horas
-# Estudo teve inicio no ano de 2020 segundo semestre 
-
-LINK do curso: https://www.udemy.com/course/curso-web/
+# <a href="https://www.udemy.com/user/leonardomouraleitao/">Professor Leonardo Moura leitão</a>
+<a href="https://www.udemy.com/course/curso-web/">Curso Web Moderno Completo com JavaScript 2020 + Projetos</a>
+<br>
+Duração +D70 horas
+<br>
+Estudo teve inicio no ano de 2020 segundo semestre 
+<br>
+<a href="https://www.udemy.com/course/curso-web/">LINK do curso</a> 
